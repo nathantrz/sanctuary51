@@ -44,7 +44,7 @@
 //  4.# If Applicable
 
 /*! WORDPRESS THEME INFO
-Theme Name: Verizon XO
+Theme Name: Sanctuary
 Author: Whitelabel
 Description:
 */
@@ -82,10 +82,6 @@ $font-stack: "Proxima-Nova", "Proxima-Nova-L", Helvetica, Arial, sans-serif;
 // Misc
 $animate-time: 0.2s;
 $border-radius: 0.250em;
-
-// Vendor
-@import "bourbon";
-@import "neat";
 
 // Base Imports
 @import "assets/styles/base/utilities";
