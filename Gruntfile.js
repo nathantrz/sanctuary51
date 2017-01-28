@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: [
-          'wp-content/themes/sanctuary/assets/scripts/src/vendor/**/*.js',
+          'wp-content/themes/sanctuary/assets/scripts/src/vendor/*.js',
           'wp-content/themes/sanctuary/assets/scripts/src/*.js',
         ], // input array
 
@@ -23,7 +23,6 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          loadPath: require('node-neat').includePaths,
           style: 'compressed'
         },
         files: {
@@ -37,7 +36,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       js: {
-        files: ['wp-content/themes/sanctuary/assets/scripts/**/*.js'],
+        files: ['wp-content/themes/sanctuary/assets/scripts/*.js'],
         tasks: ['uglify'],
       },
       sass: {
