@@ -1,0 +1,77 @@
+// Curtain
+@mixin curtain($position: fixed) {
+  background-color: rgba(invert($background), 0.9);
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: $position;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.curtain {
+  @include curtain;
+}
+
+// Modal
+@mixin modal {
+  @include horizontal-center;
+  background-color: $background;
+  display: none;
+  max-width: $phone;
+  padding: 60px;
+  top: $double-space;
+  width: 100%;
+  z-index: 10;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone){
+    top: 0;
+  } // End Secondary Mobile
+} // End modal
+
+.modal {
+  @include modal;
+}
+
+.wrap, .outer-container {
+  @include outer-container;
+  position: relative;
+  width: 90%;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    @include span-columns(10);
+    @include shift(1);
+  } // End Phone & Below
+}
+
+@mixin inner-wrap {
+  @include span-columns(8);
+  @include shift(2);
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    @include fill-parent();
+    @include shift(0);
+  } // End Phone & Below
+}
+
+@mixin section {
+  @include full-box;
+  padding: $double-minor-space 0;
+}
+
+section {
+  @include section;
+}
+
+@mixin larger {
+  font-size: 1.125em;
+}
+
+.larger {
+  @include larger;
+}

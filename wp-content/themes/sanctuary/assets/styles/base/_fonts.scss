@@ -1,0 +1,57 @@
+// Neue Haas Grotesk
+@font-face {
+	font-family: 'NHG-UT';
+	src: url('assets/fonts/NHaasGroteskDSW02-15UltTh.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSW02-15UltTh.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHG';
+	src: url('assets/fonts/NHaasGroteskDSW02-45Lt.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSW02-45Lt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Neue Haas Grotesk - Display Standard
+@font-face {
+	font-family: 'NHG-DS-T';
+	src: url('assets/fonts/NHaasGroteskDSStd-25Th.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSStd-25Th.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHG-DS-EL';
+	src: url('assets/fonts/NHaasGroteskDSStd-35XLt.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSStd-35XLt.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHG-DS';
+	src: url('assets/fonts/NHaasGroteskDSStd-55Rg.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSStd-55Rg.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHG-DS-B';
+	src: url('assets/fonts/NHaasGroteskDSStd-75Bd.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSStd-75Bd.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NHG-EB';
+	src: url('assets/fonts/NHaasGroteskDSStd-95Blk.woff2') format('woff2'),
+		url('assets/fonts/NHaasGroteskDSStd-95Blk.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
