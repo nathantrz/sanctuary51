@@ -37,26 +37,8 @@
 }
 
 .wrap, .outer-container {
-  @include outer-container;
   position: relative;
   width: 90%;
-
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    @include span-columns(10);
-    @include shift(1);
-  } // End Phone & Below
-}
-
-@mixin inner-wrap {
-  @include span-columns(8);
-  @include shift(2);
-
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    @include fill-parent();
-    @include shift(0);
-  } // End Phone & Below
 }
 
 @mixin section {
